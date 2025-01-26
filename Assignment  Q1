@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    float marks;
+    printf("Enter your marks in percentage: ");
+    
+    scanf("%f", &marks); 
+    if (marks < 40)
+    {
+        printf("Student has failed\n");
+    }
+    else if (marks >= 40 && marks < 60)
+    {
+        printf("Student passed with second class\n");
+    }
+    else if (marks >= 60 && marks < 70)
+    {
+        printf("Student passed with first class\n");
+    }
+    else if (marks >= 70)
+    {
+        printf("Student passed with Distinction\n");
+    }
+    else
+    {
+        printf("Marks not available\n");
+    }
+
+    return 0;
+}
